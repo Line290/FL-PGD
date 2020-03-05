@@ -15,7 +15,7 @@ for dataset in cifar10 svhn cifar100
                 CUDA_VISIBLE_DEVICES=0 python fs_main.py \
                     --resume \
                     --adv_mode=${method} \
-                    --lr=0.1 \
+                    --lr=${lr} \
                     --model_dir=$model_dir \
                     --init_model_pass=latest \
                     --max_epoch=200 \
